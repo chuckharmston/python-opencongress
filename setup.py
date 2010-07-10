@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
-import os
 from distutils.core import setup
 
-this_dir = os.path.dirname(__file__)
 version = '0.1'
 
 classifiers = [
@@ -28,5 +26,4 @@ setup(
     package_dir={'opencongress': 'opencongress'},
     description='A Python interface to the OpenCongress.org API',
     classifiers=classifiers,
-    long_description=open(os.path.join(this_dir, 'README.rst')).read(),
 )
